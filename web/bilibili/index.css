@@ -1,0 +1,1122 @@
+/* 主页index.html的样式表 */
+
+
+/* 
+            html {
+                perspective: 800px;
+            } */
+
+
+/* 顶部导航条的容器 */
+
+.topbar-wrapper {
+    /* 为bilibili定位 */
+    position: relative;
+    /* 设置宽度全屏 */
+    width: 100%;
+    /* 设置高度和行高 */
+    height: 155px;
+    /* 设置背景图片 */
+    background-image: url(./img/头部1.jpg);
+}
+
+
+/* 设置bilibili字样 */
+
+.bilibili {
+    position: absolute;
+    top: 85px;
+    left: 300px;
+    font-size: 20px;
+}
+
+
+/* 设置超链接颜色 */
+
+.topbar a {
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    margin-left: 14px;
+}
+
+
+/* 设置头部有文字部分的头部导航条 */
+
+.topbar {
+    width: 100%;
+    height: 56px;
+    line-height: 36px;
+    padding: 10px 24px;
+    float: left;
+    /*  background-color: #baf; */
+    position: relative;
+}
+
+
+/* 设置搜索条 */
+
+.search-wrapper {
+    width: 502px;
+    height: 38px;
+    background-color: #fff;
+    border: 1px solid orange;
+    /*     border: 1px solid hsla(0, 0%, 100%, 0); */
+    border-radius: 2px;
+    min-width: 502px;
+    position: absolute;
+    left: 50%;
+    margin-left: -251px;
+}
+
+
+/* 设置搜索框 */
+
+.search-inp {
+    float: left;
+    width: 90.4%;
+    height: 36px;
+    border-radius: 2px;
+}
+
+
+/* 设置搜索按钮 */
+
+.search .search-btn {
+    float: left;
+    width: 9.6%;
+    height: 36px;
+    background-color: #e7e7e7;
+    border: none;
+    border-color: #e7e7e7;
+    border-radius: 2px;
+}
+
+
+/* 设置按钮上的图标字体样式 */
+
+i.iconfont {
+    font-size: 17px;
+}
+
+
+/* 设置投稿按钮 */
+
+.tougao {
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    margin-left: 14px;
+    background-color: #fb7299;
+    border-radius: 2px;
+    text-align: center;
+}
+
+
+/* 设置投稿按钮的文字 */
+
+.tougao a {
+    top: 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+
+/* 设置左侧导航栏 */
+
+.service,
+.topbar li,
+.search-wrapper {
+    float: left;
+}
+
+
+/* 设置右侧导航栏 */
+
+.headxiang,
+.top-content {
+    float: right;
+}
+
+
+/* 设置头像 */
+
+
+/*  
+            .touxiang {
+                padding-top: 10px;
+                margin-left: -60px;
+                background-color: rgba(54, 54, 54, 0.651);
+            } */
+
+.pig {
+    width: 36px;
+    height: 36px;
+    border-radius: 45%;
+    transition: .2s;
+}
+
+.pig:hover {
+    transform: translateY(20px) scale(2);
+}
+
+
+/* 下拉框集合 */
+
+
+/* 设置小三角 */
+
+.game-main {
+    position: relative;
+}
+
+.game-main::before {
+    content: '';
+    border: 6px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    display: none;
+}
+
+
+/* 游戏中心下拉框 */
+
+.game {
+    /*  display: none; */
+    position: absolute;
+    top: 36px;
+    left: -40px;
+    /*  width: 550px; */
+    width: 798px;
+    /*  height: 326px; */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    /* background-color: white; */
+    background-color: transparent;
+}
+
+
+/* 游戏下拉框左边样式 */
+
+.game-left {
+    background-color: rgba(243, 240, 240, 0.973);
+    width: 300px;
+    height: 326px;
+    float: left;
+}
+
+.game1 {
+    margin-left: 14px;
+    margin-top: 16px;
+    width: 286px;
+    height: 160px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.i1 {
+    width: 285px;
+    height: 160px;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.game-row {
+    width: 285px;
+    height: 134px;
+    top: 188px;
+    left: 14px;
+    position: absolute;
+}
+
+.i2,
+.i3,
+.i4 {
+    height: 78px;
+    width: 78px;
+    float: left;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.game2,
+.game3,
+.game4 {
+    display: block;
+    height: 124px;
+    width: 81px;
+}
+
+.game2:hover,
+.game3:hover,
+.game4:hover {
+    background-color: rgba(230, 225, 225, 0.5);
+}
+
+.game-name {
+    margin-top: 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 18px;
+    color: rgb(42, 42, 42);
+    text-shadow: rgba(0, 0, 0, .5);
+}
+
+
+/* 游戏下拉框中间样式 */
+
+.game-centre {
+    width: 255px;
+    /* height: 292px; */
+    height: 326px;
+    float: left;
+    background-color: rgba(243, 240, 240, 0.973);
+}
+
+.list-head {
+    width: 233px;
+    height: 41px;
+    font-size: 13px;
+    margin-top: 14px;
+    margin-left: 17px;
+}
+
+.yugao {
+    width: 233px;
+}
+
+.list {
+    width: 233px;
+    height: 237px;
+    margin-left: 17px;
+}
+
+.slist {
+    background-color: white;
+    float: right;
+    height: 237px;
+    width: 226px;
+    border: 2px solid rgba(230, 225, 225, 0.5);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.list .n2 {
+    display: block;
+    float: none;
+    height: 34px;
+    padding-left: 16px;
+    margin-left: 0;
+    color: rgb(42, 42, 42);
+    width: 222px;
+}
+
+.list .n2:hover {
+    display: block;
+    background-color: rgb(229, 233, 239);
+    height: 34px;
+    color: rgb(0, 161, 214);
+}
+
+
+/* 游戏下拉框右边样式 */
+
+.game-right {
+    display: none;
+    width: 276px;
+    height: 237px;
+    float: left;
+    box-shadow: 0 0 10px rgba(255, 0, 0, .3);
+    z-index: 100;
+    position: absolute;
+    top: 55px;
+    left: 521px;
+}
+
+
+/* 指链接显示图片 */
+
+.r {
+    width: 276px;
+    height: 237px;
+    opacity: 0.8;
+}
+
+.list .ying:hover .game-right {
+    display: block;
+}
+
+.list .tian:hover .game-right {
+    display: block;
+}
+
+.list .apex:hover .game-right {
+    display: block;
+}
+
+.list .ha:hover .game-right {
+    display: block;
+}
+
+.list .di:hover .game-right {
+    display: block;
+}
+
+.list .li:hover .game-right {
+    display: block;
+}
+
+.list .lai:hover .game-right {
+    display: block;
+}
+
+
+/* 设置hover效果 */
+
+.game-main:hover .game {
+    /*    display: block; */
+    height: 326px;
+}
+
+.game-main:hover::before {
+    display: inline;
+}
+
+
+/* 设置直播下拉框样式 */
+
+
+/* 小三角 */
+
+.zhibo-main {
+    position: relative;
+}
+
+.zhibo-main::before {
+    content: '';
+    border: 6px solid transparent;
+    border-bottom-color: #baf;
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    display: none;
+}
+
+
+/* 下拉框 */
+
+.zhibo {
+    width: 659px;
+    height: 0px;
+    /*    height: 300px; */
+    overflow: hidden;
+    transition: height 0.3s;
+    background-color: rgba(243, 240, 240, 0.973);
+    padding-left: 26px;
+    z-index: 1;
+    /*   margin-top: 31px; */
+    position: absolute;
+    top: 36px;
+    left: -40px;
+    box-shadow: 0 0 15px rgba(151, 69, 69, 0.5);
+}
+
+.zhibo-main:hover .zhibo {
+    /*    display: block; */
+    height: 300px;
+}
+
+.zhibo-main:hover::before {
+    display: inline;
+}
+
+.word-zhibo {
+    font-weight: bold;
+    color: rgb(234, 177, 159);
+}
+
+
+/* 左边 */
+
+.zhibo-left {
+    width: 319px;
+    height: 273px;
+    background-color: rgba(243, 240, 240, 0.973);
+    float: left;
+}
+
+.zhubo {
+    height: 245px;
+    /*   background-color: orange; */
+    width: 319px;
+    border-right: 2px solid rgba(230, 225, 225, 0.5);
+}
+
+.zhubo-p {
+    width: 81px;
+    height: 106px;
+    margin-right: 22px;
+    margin-bottom: 10px;
+}
+
+.zhubo-pa {
+    width: 81px;
+    height: 106px;
+    margin-left: 0 !important;
+}
+
+.zhubo-pa:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.zhu-tou {
+    float: left;
+    width: 81px;
+    height: 81px;
+    border-radius: 45%;
+    box-shadow: 0 0 15px rgba(151, 69, 69, 0.5);
+}
+
+.live {
+    float: left;
+    margin-left: 0px;
+    margin-top: -81px;
+    width: 81px;
+    border-radius: 45%;
+    height: 81px;
+    background-color: rgba(177, 174, 174, 0.486);
+    /*   transition: 1s all cubic-bezier(.46, 1, .23, 1.52); */
+    display: none;
+}
+
+.live-p {
+    margin-left: 5px;
+    width: 70px;
+    margin-top: 25px;
+}
+
+.zhubo-pa:hover .live {
+    display: inline;
+}
+
+span {
+    display: block;
+    height: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 25px;
+    color: rgba(54, 54, 54, 0.651);
+    text-align: center;
+}
+
+
+/* 右边 */
+
+.zhibo-right {
+    width: 287px;
+    height: 300px;
+    float: left;
+    background-color: rgba(243, 240, 240, 0.973);
+    margin-left: 27px;
+    /*   padding-left: 27px; */
+}
+
+.activity {
+    width: 287px;
+    height: 120px;
+    padding-top: 10px;
+    display: block;
+}
+
+.ac-all {
+    width: 262px;
+    height: 100px;
+    left: 0;
+    position: relative;
+    box-shadow: 0 0 15px rgba(151, 69, 69, 0.5);
+}
+
+.heping {
+    /*   width: 262px; */
+    width: 287px;
+    height: 120px;
+    position: absolute;
+    top: -10px;
+    left: -14px;
+    padding-top: 10px;
+}
+
+.heping:hover {
+    background-color: rgb(234, 234, 234);
+}
+
+.mingrentang {
+    width: 262px;
+    height: 100px;
+    border-radius: 2px;
+}
+
+
+/* 漫画 */
+
+
+/* 小三角 */
+
+.manhua-main {
+    position: relative;
+}
+
+.manhua-main::before {
+    content: '';
+    border: 6px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    display: none;
+}
+
+.manhua-main:hover .manhua {
+    /*    display: block; */
+    height: 326px;
+}
+
+.manhua-main:hover::before {
+    display: inline;
+}
+
+.manhua {
+    /*   width: 650px; */
+    width: 840px;
+    /*  height: 326px; */
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    z-index: 1;
+    background-color: transparent;
+    position: absolute;
+    margin-top: -16px;
+    margin-left: -130px;
+}
+
+.for-back {
+    background-color: rgba(243, 240, 240, 0.973);
+    width: 500px;
+    height: 400px;
+}
+
+
+/* 漫画左边 */
+
+.manhua-left {
+    width: 390px;
+    height: 300px;
+    background-color: rgba(243, 240, 240, 0.973);
+    margin-top: 16px;
+    margin-left: 14px;
+    float: left;
+}
+
+.man-left-list {
+    background-color: rgba(243, 240, 240, 0.973);
+    /*  width: 197px; */
+    width: 180px;
+    box-shadow: 0 0 15px rgba(151, 69, 69, 0.5);
+    height: 130px;
+    float: left;
+    margin-top: 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+}
+
+.man-left-list:hover {
+    background-color: rgb(229, 233, 239);
+}
+
+.man-p-a {
+    width: 180px;
+    height: 130px;
+}
+
+.man-p {
+    width: 172px;
+    height: 97px;
+    margin-top: 7px;
+    margin-left: -10px;
+    border-radius: 4px;
+}
+
+.word-man {
+    color: rgba(54, 54, 54, 0.651);
+    font-weight: bold;
+    text-align: center;
+    width: 160px;
+    height: 25px;
+    margin-left: -10px;
+    letter-spacing: 6px;
+    margin-top: -6px;
+}
+
+
+/* 漫画中间 */
+
+.manhua-center {
+    width: 236px;
+    height: 290px;
+    background-color: rgba(243, 240, 240, 0.973);
+    color: rgba(54, 54, 54, 0.651);
+    font-size: 17px;
+    letter-spacing: 4px;
+    float: left;
+    margin-top: 16px;
+    padding-top: 20px;
+}
+
+.ren-list {
+    width: 236px;
+    height: 240px;
+    float: right;
+    border: 2px solid rgba(196, 190, 190, 0.5);
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: rgba(243, 240, 240, 0.973);
+}
+
+.ren-list .ren2 {
+    display: block;
+    float: none;
+    height: 34px;
+    padding-left: 16px;
+    margin-left: 0;
+    color: rgb(42, 42, 42);
+    width: 222px;
+}
+
+.ren-list .ren2:hover {
+    display: block;
+    background-color: rgb(229, 233, 239);
+    height: 34px;
+    color: rgb(0, 161, 214);
+}
+
+.num {
+    font-size: 12px;
+    color: rgb(207, 152, 112);
+    float: left;
+}
+
+.ren-name {
+    font-size: 12px;
+    color: rgba(54, 54, 54, 0.651);
+    float: left;
+}
+
+.renqi {
+    background-color: rgba(243, 240, 240, 0.973);
+    height: 40px;
+    line-height: 40px;
+    padding-left: 24px;
+}
+
+
+/* 漫画右边 */
+
+.manhua-right {
+    display: none;
+    width: 200px;
+    height: 267px;
+    float: left;
+    box-shadow: 0 0 10px rgba(255, 0, 0, .3);
+    z-index: 100;
+    position: absolute;
+    top: 35px;
+    left: 600px;
+}
+
+.mr {
+    width: 200px;
+    height: 267px;
+    opacity: 0.8;
+    /*  float: left; */
+}
+
+.ren-list .tian:hover .manhua-right {
+    display: block;
+}
+
+.ren-list .zhou:hover .manhua-right {
+    display: block;
+}
+
+.ren-list .ku:hover .manhua-right {
+    display: block;
+}
+
+.ren-list .mei:hover .manhua-right {
+    display: block;
+}
+
+.ren-list .fan:hover .manhua-right {
+    display: block;
+}
+
+.ren-list .wo:hover .manhua-right {
+    display: block;
+}
+
+
+/* 下载APP */
+
+
+/* 小三角 */
+
+.app-main {
+    position: relative;
+}
+
+.app-main::before {
+    content: '';
+    border: 6px solid transparent;
+    border-bottom-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 22px;
+    display: none;
+}
+
+.app-main:hover::before {
+    display: inline;
+}
+
+.app {
+    width: 160px;
+    z-index: 1;
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+    margin-left: -20px;
+}
+
+.app-main:hover .app {
+    height: 150px;
+}
+
+.app-code {
+    width: 160px;
+    height: 150px;
+    border-radius: 4px;
+}
+
+.xinxi {
+    background-color: white;
+    width: 352px;
+    /*  height: 575px; */
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    margin-left: -130px;
+    margin-top: 40px;
+    transition: height 0.3s;
+    box-shadow: 0 0 10px rgba(92, 90, 90, 0.938);
+}
+
+.touxiang:hover .xinxi {
+    height: 575px;
+}
+
+.na-in {
+    background-color: white;
+    width: 350px;
+    height: 70px;
+}
+
+.lev {
+    background: #000;
+    width: 350px;
+    height: 50px;
+}
+
+.lev-p {
+    width: 350px;
+    height: 50px;
+}
+
+.mon {
+    background-color: #fff;
+    width: 350px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.mon-p {
+    width: 350px;
+    height: 70px;
+}
+
+.guan {
+    background-color: white;
+    width: 350px;
+    height: 72px;
+}
+
+.guan-p {
+    width: 350px;
+    height: 72px;
+}
+
+.id-list {
+    background-color: white;
+    width: 350px;
+    height: 332px;
+}
+
+.id-list .grzx {
+    margin-left: 0 !important;
+    width: 350px;
+    background-color: #fff;
+    height: 50px;
+    color: rgb(185, 185, 185);
+    padding-left: 35px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.na-d {
+    float: left;
+    margin-top: 15px;
+    margin-left: 130px;
+    width: 50px;
+    height: 25px;
+    background-color: white;
+    z-index: 1;
+}
+
+.name {
+    color: black !important;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: snow;
+    width: 50px;
+    margin-left: 0 !important;
+    height: 25px;
+}
+
+.in {
+    background-color: salmon;
+    width: 80px;
+    height: 20px;
+    margin-top: 40px;
+    margin-left: -60px;
+    float: left;
+    padding-left: 22px;
+}
+
+.in-pink {
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 0 !important;
+    margin-top: -6px;
+}
+
+
+/*   */
+
+
+/*   */
+
+
+/*   */
+
+
+/* main */
+
+.main {
+    width: 1360px;
+    height: 1000px;
+    margin-top: 0px;
+    margin-left: 80px;
+    background-color: springgreen;
+}
+
+.main-j {
+    width: 1360px;
+    height: 110px;
+}
+
+.p {
+    width: 500px;
+    height: 200px;
+}
+
+.all {
+    width: 520px;
+    height: 220px;
+    background-color: thistle;
+    padding: 7px;
+    border: 1px solid rgba(255, 0, 0, 0.548);
+    margin: 0px;
+    position: relative;
+}
+
+.screen {
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-left: 0px;
+    margin-top: 2px;
+}
+
+.screen li {
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    float: left;
+}
+
+.screen ul {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 3000px;
+    margin-top: -2px;
+}
+
+.all ol {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.all ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 10px rgba(161, 161, 161, 0.603);
+    background: rgba(161, 161, 161, 0.603);
+    border: 1px solid white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.all ol li.current {
+    background: rgba(187, 170, 255, 0.808);
+    border-radius: 45%;
+}
+
+
+/*#arr {display: none;}*/
+
+#arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: rgba(56, 55, 55, 0.856);
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    border: 1px solid white;
+}
+
+#arr #right {
+    right: 5px;
+    left: auto;
+}
+
+
+/* 侧边栏 */
+
+.mom {
+    width: 72px;
+    height: 496px;
+    position: fixed;
+    bottom: 10px;
+    right: 50%;
+    margin-right: -755px;
+    border-radius: 8px;
+}
+
+.xian {
+    width: 72px;
+    margin-top: -1px;
+}
+
+.mom-n {
+    border: 2px solid rgba(161, 161, 161, 0.603);
+    border-radius: 8px;
+}
+
+.mom-list {
+    text-align: center;
+    width: 72px;
+    height: 48px;
+    line-height: 48px;
+    color: rgba(73, 71, 71, 0.589);
+}
+
+.top-a {
+    color: rgba(73, 71, 71, 0.589);
+}
+
+.mom-list:hover {
+    color: rgba(243, 240, 240, 0.973);
+    background-color: rgba(41, 149, 199, 0.438);
+}
+
+.load-head {
+    height: 133px;
+    width: 100%;
+}
+
+.load-left {
+    width: 684px;
+    height: 412px;
+    background-color: springgreen;
+    float: left;
+    margin-left: 80px;
+}
+
+.shiyi {
+    width: 486px;
+    height: 239px;
+    background-color: turquoise;
+    margin-top: 50px;
+    margin-left: 90px;
+}
+
+.load-code {
+    background-color: darkkhaki;
+    width: 179px;
+    height: 179px;
+}
+
+.load-right {
+    width: 684px;
+    height: 412px;
+    background-color: tomato;
+    float: left;
+}

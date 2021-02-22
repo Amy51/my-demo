@@ -1,0 +1,37 @@
+{
+  "id": "2375303",
+  "name": "bilibili",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "383342",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "2306764",
+      "name": "BILIBILI_LOGO",
+      "font_class": "bilibili",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "11466710",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "15591563",
+      "name": "bilibili-fill",
+      "font_class": "bilibili-fill",
+      "unicode": "e93e",
+      "unicode_decimal": 59710
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "2373927",
+  "name": "shangguigu",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19844648",
+      "name": "002-drum",
+      "font_class": "002-drum",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "19844655",
+      "name": "007-lantern",
+      "font_class": "007-lantern",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+/* 公共样式 */
+
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+/* 
+html {
+    perspective: 800px;
+}
+ */
+
+
+/* 去掉a的下划线 */
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+body {
+    font: 12px -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+    min-width: 1496px;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+}
+
+
+/* 设置一个类，用来设置中间容器的宽度 */
+
+.w {
+    /* 固定容器的宽度 */
+    width: 1496px;
+    /* 设置容器居中 */
+    margin: 0 auto;
+}
