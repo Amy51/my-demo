@@ -949,7 +949,6 @@ span {
     height: 1000px;
     margin-top: 0px;
     margin-left: 80px;
-    background-color: springgreen;
 }
 
 .main-j {
@@ -970,6 +969,7 @@ span {
     border: 1px solid rgba(255, 0, 0, 0.548);
     margin: 0px;
     position: relative;
+    float: left;
 }
 
 .screen {
@@ -1087,6 +1087,16 @@ span {
     background-color: rgba(41, 149, 199, 0.438);
 }
 
+.tou {
+    position: absolute;
+    color: rgba(22, 21, 21, 0.842);
+    font-size: 40px;
+    background-color: #fff;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: 110px;
+}
+
 .load-head {
     height: 133px;
     width: 100%;
@@ -1095,28 +1105,125 @@ span {
 .load-left {
     width: 684px;
     height: 412px;
-    background-color: springgreen;
+    border: 2px solid rgb(83, 79, 79);
+    border-left: none;
+    border-bottom: none;
     float: left;
     margin-left: 80px;
+}
+
+.ai {
+    margin-left: 70px;
+    margin-top: -10px;
 }
 
 .shiyi {
     width: 486px;
     height: 239px;
-    background-color: turquoise;
     margin-top: 50px;
     margin-left: 90px;
+    padding-left: 150px;
+    padding-top: 0px;
+    overflow: hidden;
+}
+
+.shiyi:hover .yun {
+    height: 239px;
+    transition: 0.3s;
+}
+
+.yun {
+    margin-left: -150px;
+    float: left;
+    height: 0;
 }
 
 .load-code {
-    background-color: darkkhaki;
     width: 179px;
     height: 179px;
+    background-color: cyan;
+}
+
+.load-tv {
+    width: 179px;
+    height: 60px;
 }
 
 .load-right {
     width: 684px;
     height: 412px;
-    background-color: tomato;
     float: left;
+    border: 2px solid rgb(83, 79, 79);
+    border-right: none;
+    border-bottom: none;
+}
+
+.l-l {
+    padding-left: 150px;
+    font-size: 20px;
+    width: 500px;
+    height: 500px;
+    color: #000;
+}
+
+.l-l-n,
+.l-l-p {
+    width: 300px;
+    height: 30px;
+    border: 2px solid #000;
+}
+
+.l-l-t {
+    height: 20px;
+    width: 50px;
+}
+
+.lbxx,
+.zmlx,
+.ck {
+    width: 256px;
+    height: 184px;
+    text-align: center;
+    color: rgba(75, 70, 70, 0.856);
+    font-weight: bold;
+    letter-spacing: 6px;
+    float: left;
+    margin: 10px 10px;
+}
+
+.lbxx-p,
+.zmlx-p,
+.ck-p {
+    float: left;
+    width: 256px;
+    height: 144px;
+}
+
+.live1 {
+    float: left;
+    margin-left: 0px;
+    margin-top: -144px;
+    width: 256px;
+    height: 144px;
+    background-color: rgba(177, 174, 174, 0.486);
+    /*   transition: 1s all cubic-bezier(.46, 1, .23, 1.52); */
+    display: none;
+}
+
+.live1-p {
+    margin-left: 5px;
+    width: 140px;
+    margin-top: 50px;
+}
+
+.lbxx:hover .live1 {
+    display: inline;
+}
+
+.zmlx:hover .live1 {
+    display: inline;
+}
+
+.ck:hover .live1 {
+    display: inline;
 }
