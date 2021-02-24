@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人详情页</title>
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="reset.css">
+</head>
+<style>
+    body {
+        background-color: rgb(244, 245, 247);
+    }
+    
+    .main {
+        height: 1200px;
+        width: 1280px;
+        margin-left: 100px;
+    }
+    
+    .m-head {
+        height: 200px;
+        width: 1280px;
+        background-image: url(./img/个人主页背景.webp);
+    }
+    
+    .deyun {
+        width: 420px;
+        margin-top: 97px;
+        float: left;
+    }
+    
+    .bianbian {
+        margin-top: 60px;
+        margin-left: 705px;
+        width: 150px;
+        height: 140px;
+        float: left;
+    }
+    
+    .guanzhu {
+        float: left;
+        background-color: palevioletred;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgb(244, 245, 247);
+        border-radius: 4px;
+        margin-top: -50px;
+        margin-left: 1000px;
+        border: 2px solid white;
+    }
+    
+    .guanzhu:hover {
+        background-color: rgb(238, 177, 197);
+    }
+    
+    .guanzhu:active {
+        background-color: rgb(56, 43, 47);
+    }
+    
+    .dan {
+        background-color: white;
+        width: 1280px;
+        height: 60px;
+        border-radius: 0 0 10px 10px;
+    }
+    
+    .dan-list {
+        float: right;
+    }
+    
+    .d-list {
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    
+    .a-list {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .a-list:hover {
+        color: turquoise;
+    }
+    
+    .shipin {
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: white;
+        width: 1280px;
+        height: 500px;
+    }
+    
+    .de,
+    .de1,
+    .de2 {
+        width: 256px;
+        height: 184px;
+        text-align: center;
+        color: rgba(75, 70, 70, 0.856);
+        font-weight: bold;
+        letter-spacing: 6px;
+        float: left;
+        margin: 10px 10px;
+        border-radius: 10px;
+    }
+    
+    .de-p,
+    .de1-p,
+    .de2-p {
+        float: left;
+        width: 256px;
+        height: 144px;
+        border-radius: 10px;
+    }
+    
+    .live1 {
+        float: left;
+        margin-left: 0px;
+        margin-top: -144px;
+        width: 256px;
+        height: 144px;
+        background-color: rgba(177, 174, 174, 0.486);
+        /*   transition: 1s all cubic-bezier(.46, 1, .23, 1.52); */
+        display: none;
+    }
+    
+    .live1-p {
+        border-radius: 10px;
+        margin-left: 5px;
+        width: 140px;
+        margin-top: 50px;
+    }
+    
+    .de:hover .live1 {
+        display: inline;
+    }
+    
+    .de1:hover .live1 {
+        display: inline;
+    }
+    
+    .de2:hover .live1 {
+        display: inline;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="m-head">
+            <img class="deyun" src="./img/德云头.png">
+            <img class="bianbian" src="./img/边边.png">
+            <a class="guanzhu">
+                关注+
+         </a>
+
+        </div>
+        <div class="dan">
+            <ul class="dan-list">
+                <li class="d-list"><a class="a-list" href="#">关注数<br>1</a></li>
+                <li class="d-list"><a class="a-list" href="#">粉丝数<br>1万</a></li>
+                <li class="d-list"><a class="a-list" href="#">获赞数<br>116</a></li>
+                <li class="d-list"><a class="a-list" href="#">播放数<br>2241</a></li>
+                <li class="d-list"><a class="a-list" href="#">阅读数<br>0</a></li>
+            </ul>
+        </div>
+        <div class="shipin">
+            <div class="de">
+                <a href="#"> <img src="./img/德云.jpg" class="de-p"></a>
+                <a href="#">
+                    <div class="live1"><img class="live1-p" src="./img/live .png"></div>
+                </a>
+                封箱
+            </div>
+            <div class="de1">
+                <img src="./img/德云1.jpg" class="de1-p">
+                <div class="live1"><img class="live1-p" src="./img/live .png"></div>
+                德云社
+            </div>
+            <div class="de2">
+                <img src="./img/德云2.jpg" class="de2-p">
+                <div class="live1"><img class="live1-p" src="./img/live .png"></div>
+                堂良
+            </div>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
